@@ -45,16 +45,19 @@ public class BallController : MonoBehaviour
 		{
 			score += 30;
 			Debug.Log("score: " + score.ToString());
+                 scoreText.GetComponent<Text>().text = score.ToString();
 		}
 		if (collision.gameObject.tag == "SmallStarTag")
 		{
 			score += 10;
 			Debug.Log("score: " + score.ToString());
+                 scoreText.GetComponent<Text>().text = score.ToString();
 		}
                  if (collision.gameObject.tag == "LargeCloudTag")
 		{
 			score += 50;
 			Debug.Log("score: " + score.ToString());
+                 scoreText.GetComponent<Text>().text = score.ToString();
 		}
                  if (collision.gameObject.tag == "SmallCloudTag")
 		{
